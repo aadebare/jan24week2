@@ -10,7 +10,14 @@
 
         <fieldset>
             <legend>official Data</legend>
-            </legend>
+            <label for="files">Choose a file to upload</label>
+            <input type="file" name="file" id="files" multiple><br>
+            <label for="files">Choose specific file to upload</label>
+            <input type="file" name="file" id="files" accept=".pdf, .png,"><br>
+            <label for="password">Password (minimum of 8 character)</label>
+            <input type="password" name="password" id="password" required minlength="8" maxlength="16" placeholder="**********"><br>
+            <label for="submit">Submit</label>
+            <input type="submit" name="submit" id="submit">
 
         </fieldset>
         <fieldset>
@@ -18,22 +25,22 @@
             <ul>
                 <li>
                     <label for="name">First Name</label>
-                    <input type="text" name="text" id="name">
+                    <input type="text" name="text" id="name" placeholder="adekunle">
                 </li>
                 <li>
                     <label for="surname">Last Name</label>
-                    <input type="text" name="text" id="surname">
+                    <input type="text" name="text" id="surname" placeholder="Gold">
                 </li>
                 <li>
                     <label for="email">Email address</label>
-                    <input type="email" name="email" id="email"></li>
+                    <input type="email" name="email" id="email" placeholder="aadebare@yahoo.com"></li>
 
                 <li><label for="tel">Phone No</label>
-                    <input type="tel" name="tel" id="tel"></li>
+                    <input type="tel" name="tel" id="tel" placeholder="+234**********"></li>
 
                     
                     <li><label for="gender">Gender</label>
-                        <input type="Gender" name="gender" id="gender"></li>
+                        <input type="Gender" name="gender" id="gender" placeholder="male/female"></li>
 
                         <li><label for="dob">Date of birth</label>
                             <input type="date" name="date" id="dot"></li>
